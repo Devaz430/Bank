@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+li{
+	list-style-type: none;
+	margin: 0;
+  padding: 0;
+}
+body.home{
+
+	background-color: grey;
+	 background-image: url("C:\Users\lenovo\Desktop\white.jpg");
+}
+
+
