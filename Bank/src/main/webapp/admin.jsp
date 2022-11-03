@@ -6,10 +6,12 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <style type="text/css">
+body{
+background: linear-gradient(135deg, #71b7e6, #9b59b6);}
 h1{
 position: relative;
 left: 550px;
-top: 100px;
+top: 130px;
 font-size: 80px;
 }
 li{
@@ -23,7 +25,7 @@ li{
 position: relative;
 left: 500px;
 display: inline;
-top: 200px;
+top: 150px;
 }
 .admin:link, .admin:visited {
   background-color: blue;

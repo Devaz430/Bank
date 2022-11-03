@@ -6,6 +6,14 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <style type="text/css">
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
 .dropbtn {
   background-color: #04AA6D;
   color: white;
@@ -13,7 +21,7 @@
   font-size: 16px;
   border: none;
 }
-.user,.pass {
+.user {
   background-color: #04AA6D;
   color: white;
   padding: 16px;
@@ -80,7 +88,7 @@
     <a href="employeeInfo.jsp">Employee Info</a>
   </div>
 </div>
- <br></br><button class="user" ><a class="admin" href="userInfo.jsp"> User Info</a></button> <br></br>
-  <button class="user"><a class="admin" href="change.jsp.jsp"> Change Password</a> </button>
+ <br></br><button onclick="document.location='userInfo.jsp'" class="user">User Info</button> <br></br>
+ <button onclick="document.location='change.jsp'" class="user">Change Password</button>
 </body>
 </html>

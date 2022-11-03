@@ -1,5 +1,5 @@
-import java.sql.Connection;
-import java.sql.*;
+
+
 
 public class loginBean {
 	private String npass,cid,eid,name,password;

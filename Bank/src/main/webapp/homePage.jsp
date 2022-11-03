@@ -7,14 +7,28 @@
 <title>Insert title here</title>
 <style type="text/css">
 body{
-background-image: url("C:\Users\lenovo\Desktop\white.jpg");
+background: linear-gradient(135deg, #71b7e6, #9b59b6);}
+}
+.nav_link{
+    display: flex;
+    justify-content: space-around;
+}
+.nav_link li a{
+    text-decoration: none;
+    display: block;
+    font-size:30px;
+    font-weight: 600;
+}
+.nav_link li{
+    list-style: none;
 }
 
 h1{
 position: relative;
-left: 350px;
-top: 100px;
-font-size: 80px;
+left: 450px;
+top: 200px;
+font-size: 60px;
+  width: 100%;
 }
 li{
 	list-style-type: none;
@@ -28,10 +42,20 @@ li{
 padding: 50px;
 
 }
+
 .first{
  position: relative;
     bottom: 200px;
-    left: 800px;
+    left: 1000px;
+    
+    padding: 15px;
+    }
+    
+   
+    .second{
+ position: relative;
+    bottom: 250px;
+    left: 1200px;
     
     padding: 15px;
     }
@@ -59,14 +83,15 @@ top: 200px;
 </head>
 <body class="home">
 <h1>Welcome to Marwadi Bank</h1>
+<div class="nav_link">
 <ul>
 <li class="a"><a class="admin" href="admin.jsp">Admin</a></li>
 <li class="a"><a class="admin" href="user.jsp">User</a></li>
 <li class="first"><a href="about.jsp">About</a></li>
-<li class="first"><a href="help.jsp">How DO I</a></li>
+<li class="second"><a href="help.jsp">How DO I</a></li>
 
 
 </ul>
-
+</div>
 </body>
 </html>

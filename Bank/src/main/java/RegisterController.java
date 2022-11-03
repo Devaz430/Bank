@@ -15,16 +15,22 @@ public class RegisterController extends HttpServlet {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		
-		
-		String eid=request.getParameter("eid");
-		String name=request.getParameter("name");
-		String password=request.getParameter("apass");
-		
 		userDao dao=new userDao();
-	boolean bean=dao.register(eid,name,password);
+		int eid=dao.generateEid();
+		String name=request.getParameter("name");
+		String password=request.getParameter("pass");
+		String country=request.getParameter("country");
+		String state=request.getParameter("state");
+		String city=request.getParameter("city");
+		String phone_num=request.getParameter("phone_num");
+		String email=request.getParameter("email");
+		String streetno=request.getParameter("streetno");
+		String gender=request.getParameter("gender");
+		
+	boolean bean=dao.register(eid,name,password,gender,country,state,city,email,streetno,phone_num);
 		request.setAttribute("bean",bean);
 		
 		
@@ -38,6 +44,6 @@ public class RegisterController extends HttpServlet {
 			rd.forward(request, response);
 		}
 		
-		
-	}}
+		}
+	}
     
